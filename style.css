@@ -1,0 +1,113 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 80px;
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78,
+    #63c9b4);
+    display: flex;
+    font-family: 'Times New Roman', sans-serif;
+    font-display: swap;
+    height: initial;
+    justify-content: center;
+
+}
+
+.Wrapper{
+    backdrop-filter:blur(5.5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 300px rgba(35, 35, 35, 0.1);
+    color: #000;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400;
+    height: 600px;
+    padding: 20px 35px;
+    
+    
+    
+}
+.screen{
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 20px;
+    padding: 0px 20px;
+    width: 500px;
+    margin: 20px;
+    font-size: 40px;
+    text-align: right;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    
+    
+}
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+    
+}
+.calc-button{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    padding: 0px;
+    border-radius: 16px;
+    height: 65px;
+    flex-basis: 20%;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+
+}
+.calc-button:last-child{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0px;
+    border-radius: 16px;
+    height: 65px;
+    flex-basis: 20%;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background: #d23333;
+}
+
+.numbers{
+    font-size: 40px;
+    margin: 10px 10px ;
+    padding: 5px ;
+    flex-basis: 10%;
+    border-color:transparent ;
+    
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    height: 65px;
+    width: 80px;
+    border: 2px solid #63c9b4;
+    
+}
+.rows{
+    padding: 0px 50px;
+    
+}
+.double{
+    flex-basis: 47%;
+}
+.tiple{
+    flex-basis: 47%;
+}
+

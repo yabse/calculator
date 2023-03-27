@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Wrapper">
+
+        <input type="text" placeholder="0" id ="output-screen" class="screen">
+        <section class="calc-buttons">
+            <div class="calc-button-row">
+                <button onclick="clear()" class="calc-button">cl</button>
+                <button onclick="del()" class="calc-button">Del</button>
+                <button onclick="display('%')" class="calc-button">%</button>
+                <button onclick="display('/')" class="calc-button">/</button>
+
+            </div>
+            <div class="calc-button-row">
+                <button onclick="display('7')" class="calc-button">7</button>
+                <button onclick="display('8')" class="calc-button">8</button>
+                <button onclick="display('9')" class="calc-button">9</button>
+                <button onclick="display('*')" class="calc-button">*</button>
+
+            </div>
+
+            <div class="calc-button-row">
+                <button onclick="display('4')" class="calc-button">4</button>
+                <button onclick="display('5')" class="calc-button">5</button>
+                <button onclick="display('6')" class="calc-button">6</button>
+                <button onclick="display('-')"class="calc-button">-</button>
+
+            </div>
+            <div class="calc-button-row">
+                <button onclick="display('1')" class="calc-button">1</button>
+                <button onclick="display('2')" class="calc-button">2</button>
+                <button onclick="display('3')" class="calc-button">3</button>
+                <button onclick="display('+')" class="calc-button">+</button>
+
+            </div>
+
+            <div class="calc-button-row">
+                <button onclick="display('0')" class="calc-button tiple">0</button>
+                <button onclick="calculate()" class="calc-button">=</button>
+                <button onclick="display('.')" class="calc-button">.</button>
+                
+            </div>        
+        </section>
+        
+
+
+    </div>
+    <script>
+        let outputScreen = document.getElementById("output-screen");
+
+        function display(num){
+            outputScreen.value += num;
+        }
+        function calculate(){
+            try{
+                outputScreen.value = eval(outputScreen.value);
+            }
+            catch(err0){
+                alert("Invalid")
+            }   
+        }
+        function clear(){
+            outputScreen.value ="0";
+        }
+        function del(){
+            outputScreen.value() = outputScreen.value.slice(0,-1);
+        }
+    </script>    
+</body>
+</html>
